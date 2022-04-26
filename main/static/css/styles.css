@@ -6,3 +6,10 @@ body {
     margin: auto 0;
     width: 100%;
 }
+
+.btn-get-started {
+    width: 25%;
+    height: 15%;
+    font-size: 1.5rem;
+    padding-top: 0.5em;
+}
