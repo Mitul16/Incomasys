@@ -7,6 +7,7 @@
 
 body {
     min-height: 100vh;
+    background-color: #000;
 }
 
 .font-style-2 {
@@ -20,9 +21,15 @@ body {
 
 .btn-get-started {
     width: 25%;
-    height: 15%;
+    /* height: 15%; */
+    align-items: center;
+    text-align: center;
     font-size: 1.5rem;
-    padding-top: 0.5em;
+    padding: 20px;
+    border: none;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background: #FF7A00;
 }
 
 .card-style {
@@ -31,4 +38,73 @@ body {
 
 .card-img-style {
     border-radius: inherit;
+}
+.main-container{
+    margin-top: 3%;
+}
+.font-style-2{
+    font-weight: 300 !important;
+}
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+.left .wrap img{
+    height: 50vh;
+}
+.left .wrap h3{
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 65px;
+    line-height: 128%;
+/* or 83px */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.065em;
+
+color: #FFFFFF;
+
+}
+
+.right{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+.right .flex-column h4{
+    margin: 10%;
+}
+.right .flex-column{
+    width: 60%;
+}
+.right input{
+    background-color: #FFF3E8;
+    border: 1px solid #E3D8EF;
+    border-radius: 10px;
+    height: 50px;
+}
+.right input:focus{
+    background-color: #FFF3E8;
+    border: 1px solid #E3D8EF !important;
+    box-shadow: 0 0 0 0.25rem rgba(145, 99, 194, 0.25);
+    border-radius: 10px;
+    height: 50px;
+}
+.right button{
+    background-color: #FF7A00;
+    box-shadow: 0px 43px 80px rgba(250, 203, 133, 0.23) !important;
+    border-radius: 10px;
+    padding: 3% 10%;
+    border: none;
+}
+.right h6 span {
+    color: #FF7A00;
 }
