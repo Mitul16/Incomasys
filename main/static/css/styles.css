@@ -105,6 +105,10 @@ color: #FFFFFF;
     padding: 3% 10%;
     border: none;
 }
-.right h6 span {
+.right h6 a {
     color: #FF7A00;
+    text-decoration: none;
+}
+.right h6 {
+    letter-spacing: 0.065em;
 }
