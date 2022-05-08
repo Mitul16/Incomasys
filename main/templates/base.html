@@ -10,7 +10,7 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
     <title>
-        {% if title %} {{ title }}
+        {% if title %} Incomasys | {{ title }}
         {% else %} Incomasys
         {% endif %}
     </title>
@@ -28,14 +28,14 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end flex-grow-1" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse justify-content-end flex-grow-1 text-light"
+                id="navbarSupportedContent">
                 <ul class="navbar-nav">
+                    {% for key,url in navs.items %}
                     <li class="nav-item">
-                        <a href="/sign-in" class="nav-link text-light">SIGN IN</a>
+                        <a href="{{ url }}" class="nav-link text-light">{{ key }}</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="/sign-up" class="nav-link text-light">REGISTER</a>
-                    </li>
+                    {% endfor %}
                 </ul>
             </div>
         </div>
