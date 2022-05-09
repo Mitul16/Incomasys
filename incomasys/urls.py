@@ -22,5 +22,7 @@ urlpatterns = [
     path('', home, name='home'),
     path('upcoming/', upcoming_conferences, name='upcoming-conf'),
     path('sign-in/', sign_in, name='sign-in'),
-    path('sign-up/', sign_up, name='sign-up')
+    path('sign-up/', sign_up, name='sign-up'),
+    path('add-event/', add_event, name='add-event'),
+    path('view-event/', view_event, name='view-event')
 ]

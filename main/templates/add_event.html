@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container text-dark p-2">
+    <div class="mx-4 right small align-content-center">
+        <div class="flex-column">
+            <h4>Host an event</h4>
+            <form action="/add-event/" method="post">
+                <div>
+                    <input name="name" type="text" class="form-control" placeholder="Event name">
+                </div>
+
+                <div class="mt-2">
+                    <input name="description" type="text" class="form-control" placeholder="Event description">
+                </div>
+
+                <div class="mt-2">
+                    <input name="date" type="date" class="form-control" placeholder="Event date">
+                </div>
+
+                <div class="mt-2">
+                    <input name="time" type="time" class="form-control" placeholder="Event time">
+                </div>
+
+                <button class="mt-2" type="submit" class="btn btn-primary">Add event</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock content %}

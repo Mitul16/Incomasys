@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container text-light p-2">
+    <div class="row row-cols-1 row-cols-md-2 align-items-center">
+        <div class="col mt-4">
+            <img src="{% static 'images/EventCardImg.png' %}" alt="" class="card-img-top card-img-style">
+        </div>
+        
+        <div class="col mt-4 text-dark">
+            <div class="card card-style">
+                <h3 class="mt-2 text-center">Event Title</h3>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <p>Start date</p>
+                        <p>End date</p>
+                    </div>
+                    <p class="text-center">Register Now!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-sm-2">
+        Description
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </div>
+
+    <div class="row row-cols-1 row-cols-sm-2">
+        Cover image
+        Title and information
+    </div>
+</div>
+{% endblock content %}

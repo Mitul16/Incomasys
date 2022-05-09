@@ -84,6 +84,11 @@ body {
   text-align: center;
   height: 100vh;
 }
+
+.right.small {
+  height: 60vh;
+}
+
 .right .flex-column h4 {
   margin: 10%;
 }
