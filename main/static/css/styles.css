@@ -165,3 +165,23 @@ body {
     height: 100%;
   }
 } */
+
+#event-info .pin-container {
+  position: absolute;
+}
+
+#event-info .pin-container svg {
+  position: absolute;
+  top: -16px;
+  right: 0;
+  opacity: 0;
+  transition: opacity 200ms;
+}
+
+#event-info:hover svg {
+  opacity: 1;
+}
+
+#event-info svg.pinned {
+  fill: orangered;
+}
