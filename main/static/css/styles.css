@@ -122,3 +122,46 @@ body {
 .right h6 {
   letter-spacing: 0.065em;
 }
+
+.event-detail-img {
+  /* height: 60%; */
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1em;
+}
+
+.card-style-event-detail {
+  /* height: 60%; */
+  border-radius: 1em;
+}
+
+.sponsor-icon {
+  width: 4rem;
+  height: 4rem;
+  background-color: #fff;
+  border-radius: 0.5em;
+}
+
+.btn-register {
+  width: 100%;
+  height: 4rem;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
+  background-color: #ff7a00;
+  border-color: #ff7a00;
+}
+
+/* 
+@media screen and (max-width: 768px) {
+  .event-detail-img {
+    height: 100%;
+  }
+
+  .card-style-event-detail {
+    height: 100%;
+  }
+} */

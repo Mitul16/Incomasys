@@ -1,34 +1,60 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<div class="container text-light p-2">
-    <div class="row row-cols-1 row-cols-md-2 align-items-center">
-        <div class="col mt-4">
-            <img src="{% static 'images/EventCardImg.png' %}" alt="" class="card-img-top card-img-style">
+<div class="container text-light p-2 d-flex flex-column gap-3">
+    <div class="row row-cols-1 row-cols-md-2">
+        <div class="col-md-8 mt-4">
+            <img src="{% static 'images/EventCardImg.png' %}" alt="" class="event-detail-img">
         </div>
-        
-        <div class="col mt-4 text-dark">
-            <div class="card card-style">
+        <div class="col-md-4 mt-4 text-dark">
+            <div class="card card-style-event-detail pt-4">
                 <h3 class="mt-2 text-center">Event Title</h3>
                 <div class="card-body">
-                    <div class="d-flex justify-content-between">
-                        <p>Start date</p>
-                        <p>End date</p>
-                    </div>
-                    <p class="text-center">Register Now!</p>
+                    <p class="card-text"><b>Starts at:</b> June 1, 2022 15:00</p>
+                    <p class="card-text"><b>Ends at:</b> June 2, 2022 15:00</p>
+                    <p class="card-text"><b>Venue:</b> Community auditorium, Institute, City, State, Country</p>
+                    <button class="btn btn-primary btn-register">Register Now</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="row row-cols-1 row-cols-sm-2">
-        Description
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <div class="row row-cols-1 row-cols-md-2">
+        <div class="col-md-8">
+            <h4>About the event</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo
+                consequat.</p>
+        </div>
+        <div class="col-md-4">
+            <h4>Sponsors</h4>
+            <div class="d-flex gap-2">
+                <div class="sponsor-icon"></div>
+                <div class="sponsor-icon"></div>
+            </div>
+        </div>
     </div>
 
-    <div class="row row-cols-1 row-cols-sm-2">
-        Cover image
-        Title and information
+    <div class="row row-cols-1 row-cols-md-2">
+        <div class="col-md-8">
+            <h4>FAQ</h4>
+            <div>
+                <p>Question</p>
+                <p>Answer</p>
+            </div>
+            <div>
+                <p>Question</p>
+                <p>Answer</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h4>Have a different query?</h4>
+            <form action="#">
+                <input type="text" placeholder="Ask a question..." class="form-control" />
+            </form>
+        </div>
     </div>
 </div>
 {% endblock content %}
