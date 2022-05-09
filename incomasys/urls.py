@@ -21,6 +21,11 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name='home'),
     path('upcoming/', upcoming_conferences, name='upcoming-conf'),
+
+    # Hosted/Pinned Events uses same layout as Upcoming Events
+    path('hosted/', upcoming_conferences, name='hosted-conf'),
+    path('pinned/', upcoming_conferences, name='pinned-conf'),
+
     path('sign-in/', sign_in, name='sign-in'),
     path('sign-up/', sign_up, name='sign-up'),
     path('add-event/', add_event, name='add-event'),

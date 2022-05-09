@@ -3,7 +3,8 @@ from django.shortcuts import render
 EVENT_NAVBAR = {
     'Upcoming Events': '/upcoming',
     'Host Event': '/add-event',
-    'Hosted Events': '/hosted'
+    'Hosted Events': '/hosted',
+    'Pinned Events': '/pinned'
 }
 
 def home(request):

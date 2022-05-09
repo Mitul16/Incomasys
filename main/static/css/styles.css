@@ -86,7 +86,7 @@ body {
 }
 
 .right.small {
-  height: 60vh;
+  height: 72vh;
 }
 
 .right .flex-column h4 {
@@ -184,4 +184,8 @@ body {
 
 #event-info svg.pinned {
   fill: orangered;
+}
+
+a {
+  text-decoration: none;
 }
